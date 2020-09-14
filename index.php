@@ -1,6 +1,6 @@
 <?php
 $zip = $_GET["zip"];
-$url = "http://api.openweathermap.org/data/2.5/weather?zip=".$zip.","."us&appid=439d4b804bc8187953eb36d2a8c26a02"; 
+$url = "http://api.openweathermap.org/data/2.5/weather?zip=".$zip.","."us&appid=a8257db81643c8c6d894e79d283df895"; 
 function display($url)
 {
 
