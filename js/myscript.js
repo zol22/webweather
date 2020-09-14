@@ -12,7 +12,7 @@
          
 		 $.ajax({
              type: 		"GET",
-             url: 		"php/weather.php",
+             url: 		"index.php",
              data: 		"zip=" + zip,
          
          	beforeSend: function(){ 		
