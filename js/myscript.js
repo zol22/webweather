@@ -45,7 +45,7 @@
 				
 				city = r.name;
 				time = r.dt;
-				temperature = Math.trunc(r.main.temp)+"&deg; F";
+				temperature = ((r.main.temp - 273.15) * 9/5) + 32 +"&deg; F";
 				humidity = r.main.humidity+"%"+" humidity";
 				description= r.weather[0].main 
 	
