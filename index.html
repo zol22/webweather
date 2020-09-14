@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather Program</title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script src="https://gitcdn.link/cdn/darkskyapp/skycons/master/skycons.js"></script>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<header>
+		<h1 class="h">Weather Program</h1>
+	</header>
+
+
+	<form class="text-center">
+		<input 	id = "zip" type = "number" name = "zip" placeholder="XXXXX" autocomplete="off"required>
+		<button id = "btn" type="button" class="btn btn-light"><b>Search by ZipCode</b></button>
+		
+	</form>
+
+
+	<div class="message">
+	    <h1 >waiting...</h1>
+	</div>
+
+
+	<div class="container">	
+		<div  class="text-white">
+		
+			<div class="w3_agile_main_grids">
+				<div class="w3layouts_main_grid">
+					<div class="w3layouts_main_grid_left">
+						<h2 id="city"></h2>
+						<p id="description"></p>
+						<h3 id="now"></h3>
+						<h4 id="temperature"></h4>
+
+
+					</div>
+					<div class="w3layouts_main_grid_right">
+						<canvas id="weather_icon" width="70" height="70"> </canvas>
+						<div id="w3time"></div>
+						<div class="w3layouts_date_year" id="day">
+							
+						</div>
+					</div>
+					<div class="clear"> </div>
+				</div>
+				
+
+			</div>
+
+			<!--<div class="agileits_copyright">
+				<p>© 2017 Aridity Weather Widget. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+			</div>-->
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/myscript.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+</body>
+</html>
